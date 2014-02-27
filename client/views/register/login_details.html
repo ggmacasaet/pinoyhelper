@@ -1,0 +1,43 @@
+<template name="register_login">
+<div class="col-md-10 col-md-offset-1">
+    <div class="col-md-12 text-center register-header">
+        {{#if experience}}
+        <h1>Sign up as {{experience}}</h1>
+        {{else}}
+        <h1>Create Your Account</h1>
+        {{/if}}
+        <div class="alert alert-danger hidden err-message"></div>
+        <div class="alert alert-success hidden"></div>
+    </div>
+    <form role="form" id="register_login" class="register-form clearfix col-md-10 col-md-offset-1">
+        <div class="clearfix">
+            <div class="text-center">
+                <button class="btn btn-primary btn-login-with-fb" type="button"><i class="fa fa-facebook-square"></i> Signup with Facebook</button>
+                <p class="credentials">- or signup below -</p>
+            </div>
+
+        </div>
+        <div class="form-group clearfix">
+            <div class="col-md-6">
+                <input type="text" name="register_firstname" class="form-control" id="register_firstname" placeholder="First name">
+            </div>
+            <div class="col-md-6">
+                <input type="text" name="register_lastname" class="form-control" id="register_lastname" placeholder="Last name">
+            </div>
+        </div>
+        <div class="form-group clearfix">
+            <div class="col-md-12">
+                <input type="text" name="register_email" class="form-control" id="register_email" placeholder="Email address">
+            </div>
+        </div>
+        <div class="form-group clearfix">
+            <div class="col-md-12">
+                <input type="password" name="register_password" class="form-control" id="register_password" placeholder="Password">
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Next</button>
+        </div>
+    </form>
+</div>
+</template>

@@ -1,0 +1,54 @@
+<template name="register_profile">
+<div class="col-md-10 col-md-offset-1">
+    <div class="col-md-12 text-center register-header">
+        <h1>Tell Us About Yourself</h1>
+        <div class="alert alert-danger hidden err-message"></div>
+    </div>
+    <form role="form" class="register-form clearfix col-md-10 col-md-offset-1">
+        <div class="form-group clearfix">
+            <div class="col-md-12">
+                <div class="form-group profile-pic">
+                    {{#if currentUser.profile.photo}}    
+                        <img class="profile-thumbnail" src="{{currentUser.profile.photo.url}}/convert?w=80&amp;h=80&amp;fit=crop&amp;align=faces">
+                    {{else}}
+                        <img class="profile-thumbnail" src="/img/default-user.png">
+                    {{/if}}
+
+                    <div class="profile-pic-text">
+                        {{> filepicker profilePicker}}
+                        <p>Everyone wants to know what you look like.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label class="control-label">Your gender</label>
+                        <select data-schema-key="profile.gender" name="profile.gender" id="gender" class="form-control" autocomplete="off">
+                            <option value="Male" {{#if isMale}} selected {{/if}}>Male</option><option value="Female" {{#if isFemale}} selected {{/if}}>Female</option>
+                        </select>
+                        <span class="help-block"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="control-label">Your birthday</label>
+                        <input type="text" readonly="true" data-schema-key="profile.birthday" name="profile.birthday" id="birthday" class="form-control datepicker" value="01/01/1980">
+                        <span class="help-block"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Your self-summary</label>
+                    <textarea data-schema-key="profile.body" name="profile.body" id="body" rows="2" class="form-control" placeholder="Write something unique about yourself..." maxlength="140"></textarea>
+                    <span class="help-block"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Favorite books, movies, sports, music, food... (optional)</label>
+                    {{> select interests}}
+                    <span class="help-block"></span>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" id="btn-save" class="btn btn-primary">Start Learning!</button>
+        </div>
+    </form>
+</div>
+</template>

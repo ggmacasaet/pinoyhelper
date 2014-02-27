@@ -1,0 +1,38 @@
+<template name="register">
+<div id="register-block" class="animated register-steps">
+    <div class="container">
+        <div class="col-md-8 col-md-offset-2 col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-heading"></div>
+                <div class="panel-content row">
+                    <div class="col-md-12 col-xs-12">
+                        <ul class="navbar-collapse collapse nav register-steps-container">
+                            <!--
+                            <li class="col-md-6 text-center {{active.signup}} signup-step">
+                                <div class="step-name">Login</div>
+                                <i class="fa fa-circle"></i>
+                                <div class="stepline"></div>
+                            </li>
+                            <li class="col-md-6 text-center {{active.profile}} choose-step">
+                                <div class="step-name">Profile</div>
+                                <i class="fa fa-circle"></i>
+                                <div class="stepline"></div>
+                                </li>
+                            -->
+                        </ul>
+                    </div>
+                    {{yield 'register_content'}}
+                </div>
+                
+                <div class="panel-footer row"></div>
+                
+            </div>
+        </div>
+    </div>
+    <div>
+        <p class="text-center"><small></small></p>
+        <div class="text-center">
+        </div>
+    </div>
+</div>
+</template>
