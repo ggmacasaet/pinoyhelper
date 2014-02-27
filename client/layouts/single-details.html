@@ -1,0 +1,21 @@
+<template name="layout_details">
+    
+    {{yield 'header'}}
+    
+    <div class="details-page">
+
+        {{yield 'hero'}}
+
+        <div id="content" class="container details">
+            <div id="sidebar">
+                {{yield 'aside'}}
+            </div>
+            <div id="main-content">
+                {{yield}}
+            </div>
+
+        </div>
+    </div>
+
+    {{yield 'footer'}}
+</template>

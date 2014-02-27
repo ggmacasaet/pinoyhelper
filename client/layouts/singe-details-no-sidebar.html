@@ -1,0 +1,19 @@
+<template name="layout_details_nosidebar">
+    
+    {{yield 'header'}}
+    
+    <div class="details-page">
+
+        {{yield 'hero'}}
+
+        <div id="content" class="container details">
+
+            <div>
+                {{yield}}
+            </div>
+
+        </div>
+    </div>
+
+    {{yield 'footer'}}
+</template>

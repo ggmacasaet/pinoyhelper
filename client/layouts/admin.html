@@ -1,0 +1,19 @@
+<template name="layout_admin">
+{{yield 'header'}}
+
+<div id="content" class="full-width">
+    <div id="wrapper">
+        <div id="page-wrapper">
+            {{yield 'aside'}}
+            <div id="main-content">
+                <h1>{{pageTitle}} <small>{{pageSubtitle}}</small></h1> 
+                <ol class="breadcrumb">
+                    <li class="active"><i class="fa fa-home"></i> <a href="/admin">Admin</a></li>
+                </ol>
+                {{yield}}
+            </div>
+        </div>
+    </div>
+</div>
+{{yield 'footer'}}
+</template>

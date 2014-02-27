@@ -1,0 +1,37 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "iron-router": {},
+      "accounts-entry": {},
+      "handlebars-server": {}
+    },
+    "packages": {
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.6.4",
+        "commit": "927bbaed1b87894fb6fb70807f74ff3a5bd89f29"
+      },
+      "accounts-entry": {
+        "git": "https://github.com/BeDifferential/accounts-entry.git",
+        "tag": "v0.6.1",
+        "commit": "8e42d4abca33d6a00d236d198589fe4924729d09"
+      },
+      "handlebars-server": {
+        "git": "https://github.com/EventedMind/meteor-handlebars-server.git",
+        "tag": "v1.1.0",
+        "commit": "ed99c8e9280894519f44a5b4c84f66ff596c5450"
+      },
+      "just-i18n": {
+        "git": "https://github.com/subhog/meteor-just-i18n.git",
+        "tag": "v0.1.1",
+        "commit": "ce88ac66c0dc107dc2da93ce152616115838101f"
+      },
+      "accounts-t9n": {
+        "git": "https://github.com/softwarerero/meteor-accounts-t9n.git",
+        "tag": "v0.0.2",
+        "commit": "408e3a037114cb72163073110e2121e3d548c1a2"
+      }
+    }
+  }
+}

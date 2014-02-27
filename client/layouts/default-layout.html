@@ -1,0 +1,14 @@
+<template name="layout">
+{{yield 'header'}}
+
+<div id="content" class="contained">
+    <div id="sidebar">
+    {{yield 'aside-profile'}}
+    {{yield 'aside'}}
+    </div>
+    <div id="main-content">
+        {{yield}}
+    </div>
+</div>
+{{yield 'footer'}}
+</template>
