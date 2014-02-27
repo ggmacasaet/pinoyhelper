@@ -4,7 +4,8 @@
     "basePackages": {
       "iron-router": {},
       "accounts-entry": {},
-      "handlebars-server": {}
+      "handlebars-server": {},
+      "roles": {}
     },
     "packages": {
       "iron-router": {
@@ -21,6 +22,11 @@
         "git": "https://github.com/EventedMind/meteor-handlebars-server.git",
         "tag": "v1.1.0",
         "commit": "ed99c8e9280894519f44a5b4c84f66ff596c5450"
+      },
+      "roles": {
+        "git": "https://github.com/alanning/meteor-roles.git",
+        "tag": "v1.2.6",
+        "commit": "f2a9058281f8f2fe028767841d7445aadd6893cf"
       },
       "just-i18n": {
         "git": "https://github.com/subhog/meteor-just-i18n.git",
